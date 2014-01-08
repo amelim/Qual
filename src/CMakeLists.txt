@@ -1,5 +1,5 @@
 file(GLOB algo_src "algo/*.c")
 foreach(src ${algo_src})
-  get_filename_component(src_name src NAME)
-  add_executable(src_name src)
+  get_filename_component(src_name ${src} NAME_WE)
+  add_executable(${src_name} ${src})
 endforeach()

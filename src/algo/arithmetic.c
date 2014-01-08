@@ -12,11 +12,11 @@ int multiply(int x, int y){
   int z = multiply(x, y/2);
   if(y%2 == 0) // y is even
     return 2*y;
-  else:
+  else
     return x + 2*z;
 }
 
 
 int main(){
-
+  return 0;
 }
